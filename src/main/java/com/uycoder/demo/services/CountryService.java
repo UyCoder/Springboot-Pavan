@@ -2,6 +2,7 @@ package com.uycoder.demo.services;
 
 import com.uycoder.demo.beans.Country;
 import com.uycoder.demo.controllers.AddResponse;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,6 +11,7 @@ import java.util.List;
 // Part 4- Rest API & Microservices| How To Create Rest API & Microservice using SpringBoot #HashMap
 // https://www.youtube.com/watch?v=gEm-Ory5NQw&list=PLUDwpEzHYYLtg-RO06RVFsauoAv241TNE&index=5
 
+@Component
 public class CountryService {
     static HashMap<Integer, Country> countryIdMap;
 
@@ -27,30 +29,22 @@ public class CountryService {
 
     // 1. get all countries data as List from Hashmap
     // http://localhost:8081/getcountries
-
     public List getAllCountries() {
         List countries = new ArrayList(countryIdMap.values());
         return countries;
     }
 
 
-
-
     // 2. get country by its ID
     // http://localhost:8081/getcountries/1
-
     public Country getCourtyById(int id) {
         Country country = countryIdMap.get(id);
         return country;
     }
 
 
-
-
-
     // 3. get country by its name and if Country name is the same as name we entered, it will return all the country datas
     // http://localhost:8081/countryname?name=india
-
     public Country getCountryByName(String countryName) {
         Country country = null;
         for (int i : countryIdMap.keySet()) {
@@ -59,9 +53,6 @@ public class CountryService {
         }
         return country;
     }
-
-
-
 
 
     // 4. add new country
@@ -81,9 +72,6 @@ public class CountryService {
     }
 
 
-
-
-
     // 5. update existing country
     // http://localhost:8081/updatecountry
     public Country updateCountry(Country country) {
@@ -91,9 +79,6 @@ public class CountryService {
             countryIdMap.put(country.getId(), country);
         return country;
     }
-
-
-
 
 
     // 6. delete country data
