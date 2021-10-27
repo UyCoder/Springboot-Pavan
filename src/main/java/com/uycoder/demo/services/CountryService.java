@@ -33,6 +33,9 @@ public class CountryService {
         return countries;
     }
 
+
+
+
     // 2. get country by its ID
     // http://localhost:8081/getcountries/1
 
@@ -40,6 +43,9 @@ public class CountryService {
         Country country = countryIdMap.get(id);
         return country;
     }
+
+
+
 
 
     // 3. get country by its name and if Country name is the same as name we entered, it will return all the country datas
@@ -54,6 +60,10 @@ public class CountryService {
         return country;
     }
 
+
+
+
+
     // 4. add new country
     // http://localhost:8081/addcountry
     public Country addCountry(Country country) {
@@ -61,7 +71,6 @@ public class CountryService {
         countryIdMap.put(country.getId(), country);
         return country;
     }
-
     // Utility method to get max id
     public static int getMaxId() {
         int max = 0;
@@ -71,6 +80,10 @@ public class CountryService {
         return max + 1;
     }
 
+
+
+
+
     // 5. update existing country
     // http://localhost:8081/updatecountry
     public Country updateCountry(Country country) {
@@ -78,6 +91,10 @@ public class CountryService {
             countryIdMap.put(country.getId(), country);
         return country;
     }
+
+
+
+
 
     // 6. delete country data
     // http://localhost:8081/deletecountry/4
