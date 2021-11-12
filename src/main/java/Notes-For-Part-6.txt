@@ -1,0 +1,6 @@
+// Part 6- Rest API & Microservices| How To Create Rest API & Microservice using SpringBoot |JPA| MySQL
+// https://www.youtube.com/watch?v=m5-tEb1kdaE&list=PLUDwpEzHYYLtg-RO06RVFsauoAv241TNE&index=6
+
+1. create a database and table.
+2. add jpa and mysql connector dependency in pom.xml file.
+3. add mysl properties in application.properties file.
