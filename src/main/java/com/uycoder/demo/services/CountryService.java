@@ -33,6 +33,11 @@ public class CountryService {
         List countries = new ArrayList(countryIdMap.values());
         return countries;
     }
+    // for the video 6 we need to change this method like this:
+    // public List<Country> getAllCountries(){
+    //  return countryrep.findAll();
+    //  }
+    // all the methods are changed in video 6, but I didn't change it.
 
 
     // 2. get country by its ID
@@ -62,6 +67,7 @@ public class CountryService {
         countryIdMap.put(country.getId(), country);
         return country;
     }
+
     // Utility method to get max id
     public static int getMaxId() {
         int max = 0;
@@ -75,7 +81,7 @@ public class CountryService {
     // 5. update existing country
     // http://localhost:8081/updatecountry
     public Country updateCountry(Country country) {
-        if(country.getId()>0)
+        if (country.getId() > 0)
             countryIdMap.put(country.getId(), country);
         return country;
     }
