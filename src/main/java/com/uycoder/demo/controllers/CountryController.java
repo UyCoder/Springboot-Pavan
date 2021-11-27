@@ -11,6 +11,8 @@ package com.uycoder.demo.controllers;
 import com.uycoder.demo.beans.Country;
 import com.uycoder.demo.services.CountryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
@@ -32,8 +34,14 @@ public class CountryController {
 
 
     @GetMapping("/getcountries/{id}")
-    public Country getCourtyById(@PathVariable(value = "id") int id) {
-        return countryService.getCourtyById(id);
+    public ResponseEntity<Country> getCourtyById(@PathVariable(value = "id") int id) {
+//        return countryService.getCourtyById(id);
+        try {
+            Country country = countryService.getCourtyById(id);
+            return new ResponseEntity<Country>(country, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<Country>(HttpStatus.NOT_FOUND);
+        }
     }
 
     @GetMapping("/getcountries/countryname")
