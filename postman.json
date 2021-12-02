@@ -1,0 +1,477 @@
+{
+  "item": [
+    {
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "path": [
+            "getcountries"
+          ],
+          "query": [],
+          "host": "{{Springboot-Pavan}}",
+          "raw": "{{Springboot-Pavan}}/getcountries"
+        }
+      },
+      "response": [
+        {
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "path": [
+                "getcountries"
+              ],
+              "query": [],
+              "host": "{{Springboot-Pavan}}",
+              "raw": "{{Springboot-Pavan}}/getcountries"
+            }
+          },
+          "_postman_previewlanguage": "json",
+          "code": 200,
+          "_postman_previewtype": "text",
+          "responseTime": 70,
+          "name": "getcountries-Example",
+          "header": [
+            {
+              "name": "date",
+              "key": "date",
+              "value": "Sat, 27 Nov 202120:26:40 GMT",
+              "description": "The date and time that the message was sent"
+            },
+            {
+              "name": "server",
+              "key": "server",
+              "value": "Apache-Coyote/1.1",
+              "description": "A name for the server"
+            },
+            {
+              "name": "transfer-encoding",
+              "key": "transfer-encoding",
+              "value": "chunked",
+              "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+            },
+            {
+              "name": "content-type",
+              "key": "content-type",
+              "value": "application/json;charset\u003dUTF-8"
+            }
+          ],
+          "body": "[\n    {}\n]",
+          "status": "OK"
+        }
+      ],
+      "name": "getcountries"
+    },
+    {
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "path": [
+            "getcountries",
+            ":id"
+          ],
+          "query": [],
+          "host": "{{Springboot-Pavan}}",
+          "raw": "{{Springboot-Pavan}}/getcountries/{id}"
+        }
+      },
+      "response": [
+        {
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "path": [
+                "getcountries",
+                ":id"
+              ],
+              "query": [],
+              "host": "{{Springboot-Pavan}}",
+              "raw": "{{Springboot-Pavan}}/getcountries/{id}"
+            }
+          },
+          "_postman_previewlanguage": "json",
+          "code": 200,
+          "_postman_previewtype": "text",
+          "responseTime": 33,
+          "name": "getCourtyById-Example",
+          "header": [
+            {
+              "name": "date",
+              "key": "date",
+              "value": "Sat, 27 Nov 202120:26:40 GMT",
+              "description": "The date and time that the message was sent"
+            },
+            {
+              "name": "server",
+              "key": "server",
+              "value": "Apache-Coyote/1.1",
+              "description": "A name for the server"
+            },
+            {
+              "name": "transfer-encoding",
+              "key": "transfer-encoding",
+              "value": "chunked",
+              "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+            },
+            {
+              "name": "content-type",
+              "key": "content-type",
+              "value": "application/json;charset\u003dUTF-8"
+            }
+          ],
+          "body": "{\n    \"id\": 0,\n    \"countryName\": \"\",\n    \"countryCapital\": \"\"\n}",
+          "status": "OK"
+        }
+      ],
+      "name": "getCourtyById"
+    },
+    {
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "path": [
+            "getcountries",
+            "countryname"
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": "",
+              "equals": true,
+              "description": ""
+            }
+          ],
+          "host": "{{Springboot-Pavan}}",
+          "raw": "{{Springboot-Pavan}}/getcountries/countryname"
+        }
+      },
+      "response": [
+        {
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "path": [
+                "getcountries",
+                "countryname"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "host": "{{Springboot-Pavan}}",
+              "raw": "{{Springboot-Pavan}}/getcountries/countryname"
+            }
+          },
+          "_postman_previewlanguage": "json",
+          "code": 200,
+          "_postman_previewtype": "text",
+          "responseTime": 93,
+          "name": "getCountryByName-Example",
+          "header": [
+            {
+              "name": "date",
+              "key": "date",
+              "value": "Sat, 27 Nov 202120:26:40 GMT",
+              "description": "The date and time that the message was sent"
+            },
+            {
+              "name": "server",
+              "key": "server",
+              "value": "Apache-Coyote/1.1",
+              "description": "A name for the server"
+            },
+            {
+              "name": "transfer-encoding",
+              "key": "transfer-encoding",
+              "value": "chunked",
+              "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+            },
+            {
+              "name": "content-type",
+              "key": "content-type",
+              "value": "application/json;charset\u003dUTF-8"
+            }
+          ],
+          "body": "{\n    \"id\": 0,\n    \"countryName\": \"\",\n    \"countryCapital\": \"\"\n}",
+          "status": "OK"
+        }
+      ],
+      "name": "getCountryByName"
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "raw": "{\n  \"id\": 0,\n  \"countryName\": \"\",\n  \"countryCapital\": \"\"\n}"
+        },
+        "url": {
+          "path": [
+            "addcountry"
+          ],
+          "query": [],
+          "host": "{{Springboot-Pavan}}",
+          "raw": "{{Springboot-Pavan}}/addcountry"
+        }
+      },
+      "response": [
+        {
+          "originalRequest": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              },
+              "raw": "{\n    \"id\": 0,\n    \"countryName\": \"\",\n    \"countryCapital\": \"\"\n}"
+            },
+            "url": {
+              "query": [],
+              "host": "{{Springboot-Pavan}}"
+            }
+          },
+          "_postman_previewlanguage": "json",
+          "code": 200,
+          "_postman_previewtype": "text",
+          "responseTime": 87,
+          "name": "addCountry-Example",
+          "header": [
+            {
+              "name": "date",
+              "key": "date",
+              "value": "Sat, 27 Nov 202120:26:40 GMT",
+              "description": "The date and time that the message was sent"
+            },
+            {
+              "name": "server",
+              "key": "server",
+              "value": "Apache-Coyote/1.1",
+              "description": "A name for the server"
+            },
+            {
+              "name": "transfer-encoding",
+              "key": "transfer-encoding",
+              "value": "chunked",
+              "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+            },
+            {
+              "name": "content-type",
+              "key": "content-type",
+              "value": "application/json;charset\u003dUTF-8"
+            }
+          ],
+          "body": "{\n    \"id\": 0,\n    \"countryName\": \"\",\n    \"countryCapital\": \"\"\n}",
+          "status": "OK"
+        }
+      ],
+      "name": "addCountry"
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "raw": "{\n  \"id\": 0,\n  \"countryName\": \"\",\n  \"countryCapital\": \"\"\n}"
+        },
+        "url": {
+          "path": [
+            "updatcountry"
+          ],
+          "query": [],
+          "host": "{{Springboot-Pavan}}",
+          "raw": "{{Springboot-Pavan}}/updatcountry"
+        }
+      },
+      "response": [
+        {
+          "originalRequest": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              },
+              "raw": "{\n    \"id\": 0,\n    \"countryName\": \"\",\n    \"countryCapital\": \"\"\n}"
+            },
+            "url": {
+              "query": [],
+              "host": "{{Springboot-Pavan}}"
+            }
+          },
+          "_postman_previewlanguage": "json",
+          "code": 200,
+          "_postman_previewtype": "text",
+          "responseTime": 46,
+          "name": "updateCountry-Example",
+          "header": [
+            {
+              "name": "date",
+              "key": "date",
+              "value": "Sat, 27 Nov 202120:26:40 GMT",
+              "description": "The date and time that the message was sent"
+            },
+            {
+              "name": "server",
+              "key": "server",
+              "value": "Apache-Coyote/1.1",
+              "description": "A name for the server"
+            },
+            {
+              "name": "transfer-encoding",
+              "key": "transfer-encoding",
+              "value": "chunked",
+              "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+            },
+            {
+              "name": "content-type",
+              "key": "content-type",
+              "value": "application/json;charset\u003dUTF-8"
+            }
+          ],
+          "body": "{\n    \"id\": 0,\n    \"countryName\": \"\",\n    \"countryCapital\": \"\"\n}",
+          "status": "OK"
+        }
+      ],
+      "name": "updateCountry"
+    },
+    {
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded",
+            "type": "text",
+            "description": ""
+          }
+        ],
+        "url": {
+          "path": [
+            "deletecountry",
+            ":id"
+          ],
+          "query": [],
+          "host": "{{Springboot-Pavan}}",
+          "raw": "{{Springboot-Pavan}}/deletecountry/{id}"
+        }
+      },
+      "response": [
+        {
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text",
+                "description": ""
+              }
+            ],
+            "url": {
+              "path": [
+                "deletecountry",
+                ":id"
+              ],
+              "query": [],
+              "host": "{{Springboot-Pavan}}",
+              "raw": "{{Springboot-Pavan}}/deletecountry/{id}"
+            }
+          },
+          "_postman_previewlanguage": "json",
+          "code": 200,
+          "_postman_previewtype": "text",
+          "responseTime": 40,
+          "name": "deleteCountry-Example",
+          "header": [
+            {
+              "name": "date",
+              "key": "date",
+              "value": "Sat, 27 Nov 202120:26:40 GMT",
+              "description": "The date and time that the message was sent"
+            },
+            {
+              "name": "server",
+              "key": "server",
+              "value": "Apache-Coyote/1.1",
+              "description": "A name for the server"
+            },
+            {
+              "name": "transfer-encoding",
+              "key": "transfer-encoding",
+              "value": "chunked",
+              "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+            },
+            {
+              "name": "content-type",
+              "key": "content-type",
+              "value": "application/json;charset\u003dUTF-8"
+            }
+          ],
+          "body": "{\n    \"msg\": \"\",\n    \"id\": 0\n}",
+          "status": "OK"
+        }
+      ],
+      "name": "deleteCountry"
+    }
+  ],
+  "info": {
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "name": "CountryController-20211127202640",
+    "description": "CountryController"
+  }
+}
