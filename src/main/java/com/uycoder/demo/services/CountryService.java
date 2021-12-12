@@ -26,13 +26,15 @@ public class CountryService {
     public CountryService() {
         countryIdMap = new HashMap<Integer, Country>();
 
-        Country indiaCountry = new Country(1, "India", "Delhi");
-        Country usaCountry = new Country(2, "USA", "Washigton");
-        Country ETCountry = new Country(3, "EastTurkistan", "Kashghar");
+        Country EastTurkistanCountry = new Country(1, "EastTurkistan", "Kashghar");
+        Country TurkiyeCountry = new Country(2, "Turkey", "Ankara");
+        Country UsaCountry = new Country(3, "USA", "Washington");
 
-        countryIdMap.put(1, indiaCountry);
-        countryIdMap.put(2, usaCountry);
-        countryIdMap.put(3, ETCountry);
+
+
+        countryIdMap.put(1, EastTurkistanCountry);
+        countryIdMap.put(2, TurkiyeCountry);
+        countryIdMap.put(3, UsaCountry);
     }
 
     // 1. get all countries data as List from Hashmap
