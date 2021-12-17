@@ -11,8 +11,8 @@ url: https://www.youtube.com/playlist?list=PLUDwpEzHYYLtg-RO06RVFsauoAv241TNE
 ![03](https://user-images.githubusercontent.com/50663127/138963754-20870921-a8d1-446e-b0e8-ea8c52102c20.PNG)
 
 
-## I deployed this project and exexut on my onr AWS EC2 instance. 
-API link : http://3.145.161.179:8080/getcountries
+## I deployed this project on my own AWS EC2 instance. 
+API link : http://3.145.161.179:8080/
 
 # Http methods for this API:
 ## Get methods:
