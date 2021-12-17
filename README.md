@@ -14,11 +14,14 @@ API link : http://3.145.161.179:8080/getcountries
 # Http methods for this API:
 ## Get methods:
 http://3.145.161.179:8080/getcountries
+
 http://3.145.161.179:8080/getcountries/{id}
+
 http://3.145.161.179:8080/getcountries/{countryname}
 
 ## Put methods:
 http://3.145.161.179:8080/addcountry
+
 http://3.145.161.179:8080/updatcountry
 
 ## Delete Method:
